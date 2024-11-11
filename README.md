@@ -27,4 +27,8 @@ Since our sorting algorithm is based on comparisons. I would assume that the alg
 - The height of this tree is the minimum number of comparisions in the worst-case senario which is at least "$\log_{2}(n!)$".
 - This height is a theoretical lower bound on the nubmer of comparisons for sorting.
 - $\log_{2}(n!)$ approximates to $n\log_{2}(n)$. This means the lower bound on comparisons for any comparison-based sorting algorithm is
-  $\Omega(n\log(n))$  
+  $\Omega(n\log(n))$. This shows us that getting a time complexity of $O(n)$ through comparisons alone is not posibble "according to 
+  Stirlings approximation".
+
+  
+  
