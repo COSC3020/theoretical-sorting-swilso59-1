@@ -16,3 +16,15 @@ Also give a theoretical argument for why X could or could not be correct, based
 on the complexity of the general sorting problem we covered in class.
 
 Add your answers to this markdown file.
+
+## Answer 
+
+Since our sorting algorithm is based on comparisons. I would assume that the algorithms would be subject to the same limitations as any comparison based sorting algorithms. 
+- In a comparision-based sorting algorithm sorting can be visualized as a decision tree. "Each comparisons acts a choice point"
+  that branches out into 2 possibilities based on the outcome of the comparison. This is whata gives us the decision tree model.
+- For an input of $n$ elements. "There are $n!$ possible output orderings". The algorithm must be able to distinguish among all 
+  permutations to sort correctly, so each permutation would be a path in the decision tree.
+- The height of this tree is the minimum number of comparisions in the worst-case senario which is at least "$\log_{2}(n!)$".
+- This height is a theoretical lower bound on the nubmer of comparisons for sorting.
+- $\log_{2}(n!)$ approximates to $n\log_{2}(n)$. This means the lower bound on comparisons for any comparison-based sorting algorithm is
+  $\Omega(n\log(n))$  
