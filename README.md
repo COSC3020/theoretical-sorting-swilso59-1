@@ -24,31 +24,31 @@ Testing:
 - I would use a set of test cases to check if the algorithm's runtime scales proportionally with an increasing input size.
 - These inputs would be arrays of various input types.
 - Some of the case types I would use would be an already sorted array, reverse sorted array, a randomly generated array, array with 
-  duplucate values, and a empty array.
+  duplicate values, and an empty array.
 - Each of these input types would be tested with different sizes to observe the runtime scaling as the input sizes increase.
-- This would allow us to see if the runtime acts in manner greater than $O(n)$. 
+- This would allow us to see if the runtime acts in a manner greater than $O(n)$. 
 
 Argument: 
 - Since our sorting algorithm is based on comparisons.
 - I would assume that the algorithms would be subject to the same limitations as any comparison based sorting algorithms. 
-- In a comparision-based sorting algorithm sorting can be visualized as a decision tree.
+- In a comparison-based sorting algorithm sorting can be visualized as a decision tree.
 - "Each comparisons acts a choice point" that branches out into 2 possibilities based on the outcome of the comparison.
 - This is what gives us the decision tree model.
 - For an input of $n$ elements "There are $n!$ possible output orderings".
 - The algorithm must be able to distinguish among all permutations to sort correctly.
 - Each permutation would be a path in the decision tree.
-- The height of this tree is the minimum number of comparisions in the worst-case senario which is at least " $\log_{2}(n!)$ ".
-- This height is a theoretical lower bound on the nubmer of comparisons for sorting.
+- The height of this tree is the minimum number of comparisons in the worst-case scenario which is at least " $\log_{2}(n!)$ ".
+- This height is a theoretical lower bound on the number of comparisons for sorting.
 - $\log_{2}(n!)$ approximates to $n\log_{2}(n)$.
 - This means the lower bound on comparisons for any comparison-based sorting algorithm is
   $\Omega(n\log(n))$.
-- This shows us that getting a time complexity of $O(n)$ through comparisons alone is not posibble "according to 
-  Stirlings approximation".
+- This shows us that getting a time complexity of $O(n)$ through comparisons alone is not possible "according to 
+  Stirling's approximation".
 
 
 ## Plagiarism Acknowledgment
 
-In this Assignment. For the testing I had a decent idea of how I would go about it since I had worked with testing and comparing runtimes against growth rates and checking against different implmentations. I took the information from the question prompt and reviewed the sorting slides. These helped me understand the limitations of comparison-based sorting.
+In this Assignment. For the testing I had a decent idea of how I would go about it since I had worked with testing and comparing runtimes with expected growth rates and checking against different implementations. I took the information from the question prompt and reviewed the sorting slides. These helped me understand the limitations of comparison-based sorting.
 
 I used the lecture01-sorting.pdf on slides 40-45 for the theoretical argument portion.
 and mergesort-swilso59-2 for the verification portion.
