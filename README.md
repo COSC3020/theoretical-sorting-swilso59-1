@@ -19,6 +19,10 @@ Add your answers to this markdown file.
 
 ## Answer 
 
+Testing: To determine if the algorithm operates in linear time. I would use a set of test cases to determine if the algorithm's runtime scales propotionally with an increasing input size. These inputs would be arrays of various input types. Some of the cases I would use would be an already sorted array, reverse sorted array, a randomly generated array, array with duplucate values, and a empty array. Each of these input types would be tested with different sizes to observe the runtime scaling as the input sizes increase. Each of these tests would be conducted multiple time to get an average runtime. 
+
+
+
 Since our sorting algorithm is based on comparisons. I would assume that the algorithms would be subject to the same limitations as any comparison based sorting algorithms. 
 - In a comparision-based sorting algorithm sorting can be visualized as a decision tree. "Each comparisons acts a choice point"
   that branches out into 2 possibilities based on the outcome of the comparison. This is whata gives us the decision tree model.
