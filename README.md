@@ -19,20 +19,46 @@ Add your answers to this markdown file.
 
 ## Answer 
 
-Testing: To determine if the algorithm operates in linear time. I would use a set of test cases to determine if the algorithm's runtime scales propotionally with an increasing input size. These inputs would be arrays of various input types. Some of the cases I would use would be an already sorted array, reverse sorted array, a randomly generated array, array with duplucate values, and a empty array. Each of these input types would be tested with different sizes to observe the runtime scaling as the input sizes increase. Each of these tests would be conducted multiple time to get an average runtime. 
+Testing: 
+- To determine if the algorithm operates in linear time.
+- I would use a set of test cases to check if the algorithm's runtime scales proportionally with an increasing input size.
+- These inputs would be arrays of various input types.
+- Some of the case types I would use would be an already sorted array, reverse sorted array, a randomly generated array, array with 
+  duplucate values, and a empty array.
+- Each of these input types would be tested with different sizes to observe the runtime scaling as the input sizes increase.
+- This would allow us to see if the runtime acts in manner greater than $O(n)$. 
 
-
-
-Since our sorting algorithm is based on comparisons. I would assume that the algorithms would be subject to the same limitations as any comparison based sorting algorithms. 
-- In a comparision-based sorting algorithm sorting can be visualized as a decision tree. "Each comparisons acts a choice point"
-  that branches out into 2 possibilities based on the outcome of the comparison. This is whata gives us the decision tree model.
-- For an input of $n$ elements. "There are $n!$ possible output orderings". The algorithm must be able to distinguish among all 
-  permutations to sort correctly, so each permutation would be a path in the decision tree.
-- The height of this tree is the minimum number of comparisions in the worst-case senario which is at least "$\log_{2}(n!)$".
+Argument: 
+- Since our sorting algorithm is based on comparisons.
+- I would assume that the algorithms would be subject to the same limitations as any comparison based sorting algorithms. 
+- In a comparision-based sorting algorithm sorting can be visualized as a decision tree.
+- "Each comparisons acts a choice point" that branches out into 2 possibilities based on the outcome of the comparison.
+- This is what gives us the decision tree model.
+- For an input of $n$ elements "There are $n!$ possible output orderings".
+- The algorithm must be able to distinguish among all permutations to sort correctly.
+- Each permutation would be a path in the decision tree.
+- The height of this tree is the minimum number of comparisions in the worst-case senario which is at least " $\log_{2}(n!)$ ".
 - This height is a theoretical lower bound on the nubmer of comparisons for sorting.
-- $\log_{2}(n!)$ approximates to $n\log_{2}(n)$. This means the lower bound on comparisons for any comparison-based sorting algorithm is
-  $\Omega(n\log(n))$. This shows us that getting a time complexity of $O(n)$ through comparisons alone is not posibble "according to 
+- $\log_{2}(n!)$ approximates to $n\log_{2}(n)$.
+- This means the lower bound on comparisons for any comparison-based sorting algorithm is
+  $\Omega(n\log(n))$.
+- This shows us that getting a time complexity of $O(n)$ through comparisons alone is not posibble "according to 
   Stirlings approximation".
+
+
+## Plagiarism Acknowledgment
+
+In this Assignment. For the testing I had a decent idea of how I would go about it since I had worked with testing and comparing runtimes against growth rates and checking against different implmentations. I took the information from the question prompt and reviewed the sorting slides. These helped me understand the limitations of comparison-based sorting.
+
+I used the lecture01-sorting.pdf on slides 40-45 for the theoretical argument portion.
+and mergesort-swilso59-2 for the verification portion.
+
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”
+ 
+
 
   
   
