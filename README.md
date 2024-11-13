@@ -18,7 +18,6 @@ on the complexity of the general sorting problem we covered in class.
 Add your answers to this markdown file.
 
 ## Answer 
-
 Testing: 
 - To determine if the algorithm operates in linear time.
 - I would use a set of test cases to check if the algorithm's runtime scales proportionally with an increasing input size.
@@ -26,7 +25,7 @@ Testing:
 - Some of the case types I would use would be an already sorted array, reverse sorted array, a randomly generated array, array with 
   duplicate values, and an empty array.
 - Each of these input types would be tested with different sizes to observe the runtime scaling as the input sizes increase.
-- This would allow us to see if the runtime acts in a manner greater than $O(n)$. 
+- This would allow us to see if the runtime acts in a manner greater than $O(n)$.
 
 Argument: 
 - Since our sorting algorithm is based on comparisons.
@@ -45,6 +44,11 @@ Argument:
 - This shows us that getting a time complexity of $O(n)$ through comparisons alone is not possible "according to 
   Stirling's approximation".
 
+Observations: 
+- Through conducting these tests I would expect to see that with large enough input sizes we would see that the sorting algrithm 
+  scales worse than $O(n)$.
+- This would show us that the sorting algorithm's time complexity does not achieve $O(n)$ and that its time complexity aligns more 
+  closely with the theoretical bounds of $O(n\log(n))$.
 
 ## Plagiarism Acknowledgment
 
