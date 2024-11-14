@@ -26,7 +26,6 @@ Testing:
   duplicate values, and an empty array.
 - Each of these input types would be tested with different sizes to observe the runtime scaling as the input sizes increase.
 - This would allow us to see if the runtime acts in a manner greater than $O(n)$.
-- I would expect that the initial time complexity is incorrect.
 - If $O(n)$ is correct I would expect the time to run the sorting algorithm to double if the input size is doubled regardless of the 
   input type.
 - Being skeptical that the analysis is correct I would expect to see that the runtime follows a larger growth rate when compared 
